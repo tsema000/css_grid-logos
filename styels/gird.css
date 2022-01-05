@@ -1,23 +1,42 @@
-img{
-    width: 200px;
+body, html{
+  height: 100vh;
+  width: 100vh;
+  background-color: white;
 }
 
-.wrapper{
-    display: flex;
-    align-items:center;
-    flex-direction: row;
+.grid-container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 30% 30%;
+  grid-column-gap: 25%;
+  grid-row-gap: 50%;
+  margin: 100px;
+  
 }
 
-#amazon{
-    align-self: flex-end;
-    order:1;
+.apple{
+  height: 100px;
+  width: 100px;
+  object-fit:cover;
+  padding-left: 45px;
 }
-#beats{
-    order:2;
+
+.adidas{
+  height: 100px;
+  width: 150px;
+  object-fit:cover;
 }
-#adidas{
-    order:3;
+
+.amazon{
+  height: 100px;
+  width: 200px;
+  object-fit:cover;
+  padding-top: 10px;
 }
-#apple{
-    order:4;
+
+.beats{
+  height: 125px;
+  width: 125px;
+  object-fit:cover;
+  padding-left: 12.5px;
 }
